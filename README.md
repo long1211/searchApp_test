@@ -1,2 +1,2 @@
 # Build App Search Test
-- live demo: https://glowing-biscotti-ff454e.netlify.app/
+- live demo: https://search-app-test.netlify.app/
