@@ -91,7 +91,7 @@ const Product = ({ item }) => {
           <span>Hết hàng</span>
         ) : (
           <div className="quality">
-            Có&nbsp;
+            Còn&nbsp;
             {item.variants[0].inventory_quantity}
             &nbsp;sản phẩm có sẵn
           </div>
