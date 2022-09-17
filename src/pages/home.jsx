@@ -7,9 +7,9 @@ const Input = styled.input`
   outline: none;
   border: none;
   background-color: #f5f5f5;
-  padding: 15px 20px;
+  padding: 12px 20px;
   border: 1px solid #9f9f9f;
-  font-size: 20px;
+  font-size: 16px;
   width: 20%;
 `;
 
