@@ -2,12 +2,23 @@ import styled from "styled-components";
 import Product from "./product";
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+      flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
   padding: 50px 120px;
 `;
+
+const NotFound = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  font-size: 60px;
+  width: 100%;
+  font-weight: 600;
+`
 
 const Products = ({ data }) => {
   return (
@@ -15,7 +26,7 @@ const Products = ({ data }) => {
       {data.length > 0 ? (
         data.map((item) => <Product item={item} key={item.id} />)
       ) : (
-        <h1>Không tìm thấy kết quả</h1>
+        <NotFound>Không tìm thấy kết quả phù hợp</NotFound>
       )}
     </Container>
   );
